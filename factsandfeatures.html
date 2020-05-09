@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mother-Nature</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" type="text/css" href="css/aos/aos.css">
+        <link rel = "icon" href = "img/logo1.png" type = "image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style3.css">
+    </head>
+    <body class="pt-0 factsandfeatures">
+        <section class="bg-cover top">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav mt-2 mt-md-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./articles.html">Articles <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Issuesandtheirsolutions.html">Issues & their solutions <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a role="button"class="btn btn-success pill-btn" id="FeedbackForm">Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="FeedbackModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><img class="mx-3" src="img/logo.png" class="img-fluid" height="40px" width="40px"> Send us your Feedback</h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    &times;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="firstname" class="col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                        <label for="lastname" class=" col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="address" class="col-form-label"></label>
+                                        <div class="col-10">
+                                            <input type="text" class="form-control" id="address" name="address" placeholder="Address" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="emailid" class="col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="email" class="form-control" id="effect emailid" name="emailid" placeholder="Email" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                        <div class="col-5">
+                                            <input type="tel" class="form-control" id="mobilenum" name="telnum" placeholder="Mobile No." style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                    
+                                    
+                                    <div class="form-group row justify-content-center">
+                                        <label for="feedback" class=" col-form-label"></label>
+                                        <div class="col-10">
+                                            <textarea class="form-control" id="feedback" name="feedback" rows="6" placeholder="Write your feedback here!" style="box-shadow: 1px 1px 1px 1px chartreuse;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <button type="submit" class="btn btn-success btn-lg effect">Submit</button>
+                                    </div>
+                                </form>                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-center data">
+                    <div class="col-12">
+                        <img class="d-block img-fluid" src="img/carousel (2).jpg"> 
+                        <div class="content">
+                            <h1 class="text-white">"If you save your mother nature, then she will take care of you in every situation"</h1>
+                        </div> 
+                    </div>
+                </div>
+                                     
+                   
+        </section>
+        <section id="articles" class="my-5 container-fluid">
+            <div id="cardslider1" class="carousel slide mx-auto " data-ride="carousel" data-pause="hover" >
+                <div class="carousel-inner container" role="listbox">
+                    <div class="carousel-item active">
+                      <h1 class="text-center my-5">Climatic Changes</h1>
+                      <div class="row">
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                      </div>
+                    </div>
+                      
+                        
+                    <div class="carousel-item">
+                        <h1 class="text-center my-5">Global Warming</h1>
+                        <div class="row">
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="text-center my-5">Global Warning</h1>
+                        <div class="row">
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                          <div class="infocard col-4">
+                              <div class="card-container">
+                                 <div class="card">
+                                     <div class="front">
+                                         <div class="cover">
+                                             <img src="images/rotating_card_thumb3.png"/>
+                                         </div>
+                                         <div class="user">
+                                             <img class="img-circle" src="images/rotating_card_profile.png"/>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h3 class="name">Inna Corman</h3>
+                                                 <p class="profession">Product Manager</p>
+
+                                                 <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                                             </div>
+                                             <div class="footer">
+                                                 <div class="rating">
+                                                     <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div> <!-- end front panel -->
+                                     <div class="back">
+                                         <div class="header">
+                                             <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                                         </div>
+                                         <div class="content">
+                                             <div class="main">
+                                                 <h4 class="text-center">Job Description</h4>
+                                                 <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                                 <div class="stats-container">
+                                                     <div class="stats">
+                                                         <h4>235</h4>
+                                                         <p>
+                                                             Followers
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>114</h4>
+                                                         <p>
+                                                             Following
+                                                         </p>
+                                                     </div>
+                                                     <div class="stats">
+                                                         <h4>35</h4>
+                                                         <p>
+                                                             Projects
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            
+                <a class="carousel-control-prev custom-color" href="#cardslider1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next custom-color" href="#cardslider1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>   <!--end of articles-->
+        <!-- Major disease around the globe -->
+        <section class="Diseases">
+            <div class="container">
+                <h1 class="text-center mb-5">Diseases Around Us</h1>
+                <div class="card-group vgr-cards">
+                    <div class="card">
+                      <div class="card-img-body">
+                      <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Card Title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little
+                          bit longer.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More!</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-img-body">
+                        <img class="card-img" src="https://picsum.photos/400/200" alt="Card image cap"></div>
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This card has supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More!</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-img-body">
+                        <img class="card-img" src="https://picsum.photos/450/250" alt="Card image cap"></div>
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action. This is a wider card with supporting text below as a natural lead-in
+                          to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More!</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- footer -->
+         <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-2 offset-md-1">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-2 offset-md-1">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">&copy; 2020 Mother-Nature, Jai Kumar Kaushil</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 align-self-center">
+                    <div class="text-center pt-sm-2">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+        
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+        <script type="text/javascript" src="css/aos.aos.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </body>
+</html>

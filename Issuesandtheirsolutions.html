@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mother-Nature</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style3.css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="node_modules/nprogress/nprogress.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel = "icon" href = "img/logo1.png" type = "image/x-icon">
+    </head>
+    <body class="pt-0">
+        <section class="bg-cover top">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html"><img src="img/logo1.png" width="45px"height="auto" class="mr-2">Mother-Nature</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mt-2 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./articles.html">Articles <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./Issuesandtheirsolutions.html">Issues & Solutions <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a role="button"class="btn btn-success pill-btn" id="FeedbackForm">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="FeedbackModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><img class="mx-3" src="img/logo.png" class="img-fluid" height="40px" width="40px"> Send us your Feedback</h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    &times;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="firstname" class="col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                        <label for="lastname" class=" col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="address" class="col-form-label"></label>
+                                        <div class="col-10">
+                                            <input type="text" class="form-control" id="address" name="address" placeholder="Address" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="emailid" class="col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="email" class="form-control" id="effect emailid" name="emailid" placeholder="Email" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                        <div class="col-5">
+                                            <input type="tel" class="form-control" id="mobilenum" name="telnum" placeholder="Mobile No." style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                    
+                                    
+                                    <div class="form-group row justify-content-center">
+                                        <label for="feedback" class=" col-form-label"></label>
+                                        <div class="col-10">
+                                            <textarea class="form-control" id="feedback" name="feedback" rows="6" placeholder="Write your feedback here!" style="box-shadow: 1px 1px 1px 1px chartreuse;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <button type="submit" class="btn btn-success btn-lg effect">Submit</button>
+                                    </div>
+                                </form>                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            <div class="row justify-content-center data">
+                <div class="col-12">
+                    <img class="d-block img-fluid" src="img/issues-top.jpg"> 
+                    <div class="content">
+                        <h1 class="text-white">"Ask not what your planet can do for you, Ask what you can do for <strong>your</strong> planet"</h1>
+                    </div> 
+                </div>
+            </div>    
+        </section>
+        
+        <section class="problems py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Issues and their Solutions</h1>
+                <div class="row d-flex align-items-center mb-5">
+                    <div class="col-8">
+                        <h4 class="text-left">Problem 1 Title</h4>
+                        <p class="text-justify">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future.</p>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#suggestion1" role="button" aria-expanded="false" aria-controls="suggestion1">Read More</a>
+                        <a role="button" class="btn" href="#">Resource</a>
+                        <div class="collapse" id="suggestion1">
+                            <div class="card">
+                                <h4 class="card-title ml-3">Suggestion</h4>
+                                <h5 class="card-subtitle ml-3 text-muted">Solution</h5>
+                                <div class="card-body">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div id="problem-img1" class="carousel slide mx-auto" data-ride="carousel" data-pause="hover" >
+                            <div class="carousel-inner container" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="img/carousel (1).jpg">
+                                </div>
+                                  
+                                    
+                                <div class="carousel-item">
+                                    <img src="img/carousel (2).jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel (3).jpg">
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#problem-img1" data-slide-to="0" class="active"></li>
+                                <li data-target="#problem-img1" data-slide-to="1"></li>
+                                <li data-target="#problem-img1" data-slide-to="2"></li>
+                            </ol>
+                            <a class="carousel-control-prev custom-color" href="#problem-img1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next custom-color" href="#problem-img1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center mb-5">
+                    <div class="col-8 order-2">
+                        <h4 class="text-left">Problem 2 Title</h4>
+                        <p class="text-justify">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future.</p>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#suggestion2" role="button" aria-expanded="false" aria-controls="suggestion2">Read More</a>
+                        <a role="button" class="btn" href="#">Resource</a>
+                        <div class="collapse" id="suggestion2">
+                            <div class="card">
+                                <h4 class="card-title ml-3">Suggestion</h4>
+                                <h5 class="card-subtitle ml-3 text-muted">Solution</h5>
+                                <div class="card-body">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 order-1">
+                        <div id="problem-img2" class="carousel slide mx-auto" data-ride="carousel" data-pause="hover" >
+                            <div class="carousel-inner container" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="img/carousel (1).jpg">
+                                </div>
+                                  
+                                    
+                                <div class="carousel-item">
+                                    <img src="img/carousel (2).jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel (3).jpg">
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#problem-img2" data-slide-to="0" class="active"></li>
+                                <li data-target="#problem-img2" data-slide-to="1"></li>
+                                <li data-target="#problem-img2" data-slide-to="2"></li>
+                            </ol>
+                            <a class="carousel-control-prev custom-color" href="#problem-img2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next custom-color" href="#problem-img2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row d-flex align-items-center mb-5">
+                    <div class="col-8">
+                        <h4 class="text-left">Problem 3 Title</h2>
+                        <p class="text-justify">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future.</p>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#suggestion3" role="button" aria-expanded="false" aria-controls="suggestion3">Read More</a>
+                        <a role="button" class="btn" href="#">Resource</a>
+                        <div class="collapse" id="suggestion3">
+                            <div class="card">
+                                <h4 class="card-title ml-3">Suggestion</h4>
+                                <h5 class="card-subtitle ml-3 text-muted">Solution</h5>
+                                <div class="card-body">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div id="problem-img3" class="carousel slide mx-auto" data-ride="carousel" data-pause="hover" >
+                            <ol class="carousel-indicators">
+                                <li data-target="#problem-img3" data-slide-to="0" class="active"></li>
+                                <li data-target="#problem-img3" data-slide-to="1"></li>
+                                <li data-target="#problem-img3" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner container" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="img/carousel (1).jpg">
+                                </div>
+                                  
+                                    
+                                <div class="carousel-item">
+                                    <img src="img/carousel (2).jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel (3).jpg">
+                                </div>
+                            </div>
+                            
+                            <a class="carousel-control-prev custom-color" href="#problem-img3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next custom-color" href="#problem-img3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+         <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-2 offset-md-1">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-2 offset-md-1">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">&copy; 2020 Mother-Nature, Jai Kumar Kaushil</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 align-self-center">
+                    <div class="text-center pt-sm-2">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+        
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.bundle.min.js"></script>
+        <!-- NProgress -->
+        <script src="node_modules/nprogress/nprogress.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+        <script type="text/javascript" src="css/aos.aos.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mother-Nature</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/nprogress/nprogress.css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel = "icon" href = "img/logo1.png" type = "image/x-icon">
+        <link rel="stylesheet" href="css/style3.css">
+    </head>
+    <body class="pt-0">
+        <section class="bg-cover">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="./index.html"><img src="img/logo1.png" width="45px"height="auto" class="mr-2">Mother-Nature</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav mt-2 mt-md-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./articles.html">Articles <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Issuesandtheirsolutions.html">Issues & Solutions <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a role="button"class="btn btn-success pill-btn" id="FeedbackForm">Feedback</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="FeedbackModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><img class="mx-3" src="img/logo.png" class="img-fluid" height="40px" width="40px"> Send us your Feedback</h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    &times;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="firstname" class="col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                        <label for="lastname" class=" col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="address" class="col-form-label"></label>
+                                        <div class="col-10">
+                                            <input type="text" class="form-control" id="address" name="address" placeholder="Address" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="emailid" class="col-form-label"></label>
+                                        <div class="col-5">
+                                            <input type="email" class="form-control" id="effect emailid" name="emailid" placeholder="Email" style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                        <div class="col-5">
+                                            <input type="tel" class="form-control" id="mobilenum" name="telnum" placeholder="Mobile No." style="box-shadow: 1px 1px 1px 1px chartreuse;">
+                                        </div>
+                                    </div>
+                    
+                                    
+                                    <div class="form-group row justify-content-center">
+                                        <label for="feedback" class=" col-form-label"></label>
+                                        <div class="col-10">
+                                            <textarea class="form-control" id="feedback" name="feedback" rows="6" placeholder="Write your feedback here!" style="box-shadow: 1px 1px 1px 1px chartreuse;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <button type="submit" class="btn btn-success btn-lg effect">Submit</button>
+                                    </div>
+                                </form>                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            <div id="landingcarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active custom1">
+                        <img class="d-block img-fluid" src="img/carousel (8).jpg">
+                        <div class="carousel-caption d-none d-md-block d-flex">
+                             <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item custom1">
+                        <img class="d-block img-fluid " src="img/carousel (2).jpg"> 
+                        <div class="carousel-caption d-none d-md-block d-flex">
+                             <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>                      
+                    </div>
+                    <div class="carousel-item custom1">
+                        <img class="d-block img-fluid" src="img/carousel (12).jpg">
+                        <div class="carousel-caption d-none d-md-block d-flex">
+                             <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item custom1">
+                        <img class="d-block img-fluid" src="img/carousel (4).jpg">
+                        <div class="carousel-caption d-none d-md-block d-flex">
+                             <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item custom1">
+                        <img class="d-block img-fluid" src="img/carousel (7).jpg">
+                        <div class="carousel-caption d-none d-md-block d-flex">
+                             <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#landingcarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#landingcarousel" data-slide-to="1"></li>
+                    <li data-target="#landingcarousel" data-slide-to="2"></li>
+                    <li data-target="#landingcarousel" data-slide-to="3"></li>
+                    <li data-target="#landingcarousel" data-slide-to="4"></li>
+                </ol>
+                <a class="carousel-control-prev" href="#landingcarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#landingcarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>                                  
+            </div>
+        </section>
+        <section class="bg-cover2 level">
+            <div class="container py-5 ">
+                <div class="row">
+
+    <!-- For demo purpose -->
+                    <div class="col-lg-12 mx-auto mb-5 text-white text-center">
+                        <h1 class="mt-3">Toxic Level Indicators</h1>
+                        <ul class="nav nav-pills mt-5 mb-4">
+                            <li class="nav-item m-auto">
+                            <a class="nav-link active" href="#CarbonDioxide" role="tab" data-toggle="tab">Carbon Dioxide</a>
+                            </li>
+                            <li class="nav-item m-auto">
+                              <a class="nav-link" href="#GlobalTemperature" role="tab"
+                                data-toggle="tab">Global Temperature</a>
+                            </li>
+                            <li class="nav-item m-auto">
+                              <a class="nav-link" href="#NitrogenDioxide"role="tab"
+                                data-toggle="tab">Nitrogen Dioxide</a>
+                            </li>
+                            <li class="nav-item m-auto">
+                              <a class="nav-link" href="#IceLevel" role="tab"
+                                data-toggle="tab">Ice Level</a>
+                            </li>
+                            <li class="nav-item m-auto">
+                              <a class="nav-link" href="#IceSheets" role="tab"
+                                data-toggle="tab">Ice Sheets</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade show active" id="CarbonDioxide">
+                                <div class="row">
+                                    <div class="col-9 mx-auto">
+                                        <h3>Peter Pan Chief Epicurious Officer</h3>
+                                        <p class="d-none d-sm-block">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="GlobalTemperature">
+                                <div class="row">
+                                    <div class="col-9 mx-auto">
+                                        <h3>Peter Pan Chief Epicurious Officer</h3>
+                                        <p class="d-none d-sm-block">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="NitrogenDioxide">
+                                <div class="row">
+                                    <div class="col-9 mx-auto">
+                                        <h3>Peter Pan Chief Epicurious Officer</h3>
+                                        <p class="d-none d-sm-block">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="IceLevel">
+                                <div class="row">
+                                    <div class="col-9 mx-auto">
+                                        <h3>Peter Pan Chief Epicurious Officer</h3>
+                                        <p class="d-none d-sm-block">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="IceSheets">
+                                <div class="row">
+                                    <div class="col-9 mx-auto">
+                                        <h3>Peter Pan Chief Epicurious Officer</h3>
+                                        <p class="d-none d-sm-block">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        <!-- END -->
+
+                    <div class="col-xl-3 col-lg-6 mb-4">
+                        <div class="bg-custom rounded-lg p-5 shadow">
+                            <h2 class="h6 font-weight-bold text-center mb-4">Overall progress</h2>
+
+                            <!-- Progress bar 1 -->
+                            <div class="progress mx-auto" data-value='80'>
+                              <span class="progress-left">
+                                            <span class="progress-bar border-primary"></span>
+                              </span>
+                              <span class="progress-right">
+                                            <span class="progress-bar border-primary"></span>
+                              </span>
+                              <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+                              </div>
+                            </div>
+                            <!-- END -->
+
+                            <!-- Demo info -->
+                            <div class="row text-center mt-4">
+                              <div class="col-6 border-right">
+                                <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                              </div>
+                              <div class="col-6">
+                                <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                              </div>
+                            </div>
+                            <!-- END -->
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 mb-4">
+                        <div class="bg-custom rounded-lg p-5 shadow">
+                            <h2 class="h6 font-weight-bold text-center mb-4">Work hours</h2>
+
+                            <!-- Progress bar 2 -->
+                            <div class="progress mx-auto" data-value='60'>
+                              <span class="progress-left">
+                                            <span class="progress-bar border-danger"></span>
+                              </span>
+                              <span class="progress-right">
+                                            <span class="progress-bar border-danger"></span>
+                              </span>
+                              <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 font-weight-bold">25<sup class="small">%</sup></div>
+                              </div>
+                            </div>
+                            <!-- END -->
+
+                            <!-- Demo info-->
+                            <div class="row text-center mt-4">
+                              <div class="col-6 border-right">
+                                <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                              </div>
+                              <div class="col-6">
+                                <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                              </div>
+                            </div>
+                            <!-- END -->
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 mb-4">
+                        <div class="bg-custom rounded-lg p-5 shadow">
+                            <h2 class="h6 font-weight-bold text-center mb-4">Server time</h2>
+
+                            <!-- Progress bar 3 -->
+                            <div class="progress mx-auto" data-value='76'>
+                              <span class="progress-left">
+                                            <span class="progress-bar border-success"></span>
+                              </span>
+                              <span class="progress-right">
+                                            <span class="progress-bar border-success"></span>
+                              </span>
+                              <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 font-weight-bold">76<sup class="small">%</sup></div>
+                              </div>
+                            </div>
+                            <!-- END -->
+
+                            <!-- Demo info -->
+                            <div class="row text-center mt-4">
+                              <div class="col-6 border-right">
+                                <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                              </div>
+                              <div class="col-6">
+                                <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                              </div>
+                            </div>
+                            <!-- END -->
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6 mb-4">
+                        <div class="bg-custom rounded-lg p-5 shadow">
+                            <h2 class="h6 font-weight-bold text-center mb-4">Total overdue</h2>
+
+                            <!-- Progress bar 4 -->
+                            <div class="progress mx-auto" data-value='12'>
+                              <span class="progress-left">
+                                            <span class="progress-bar border-warning"></span>
+                              </span>
+                              <span class="progress-right">
+                                            <span class="progress-bar border-warning"></span>
+                              </span>
+                              <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                <div class="h2 font-weight-bold">12<sup class="small">%</sup></div>
+                              </div>
+                            </div>
+                            <!-- END -->
+
+                            <!-- Demo info -->
+                            <div class="row text-center mt-4">
+                              <div class="col-6 border-right">
+                                <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+                              </div>
+                              <div class="col-6">
+                                <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- END -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5  pb-4 newscard">
+                    <h1 class="text-center my-3">Latest News & Updates</h1>
+                    <div id="cardslider" class="carousel slide mx-auto mt-5 mb-4" data-ride="carousel" data-pause="hover">
+                        <div class="carousel-inner container" role="listbox">
+                            <div class="carousel-item active">
+                                        <div class="card hover">
+                                            <div class="card-img" style="background-image:url(https://images.unsplash.com/photo-1493847242172-d46053a1f671?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f91dd5d50f16ba80af53a62d4caf2ce&auto=format&fit=crop&w=500&q=60);">
+                                                <div class="overlay">
+                                                    <div class="overlay-content">
+                                                        <a class="hover" href="#!">View Project</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card-content">
+                                                <a href="#!">
+                                                    <h2>Title</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="card">
+                                            <div class="card-img" style="background-image:url(https://images.unsplash.com/photo-1491374812364-00028bbe7d2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a22e4862c36c552e726815949fbcb41a&auto=format&fit=crop&w=500&q=60);">
+                                                <div class="overlay">
+                                                    <div class="overlay-content">
+                                                        <a href="#!">View Project</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card-content">
+                                                <a href="#!">
+                                                    <h2>Title</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                
+
+                                    
+                                        <div class="card">
+                                            <div class="card-img" style="background-image:url(https://images.unsplash.com/photo-1519176336903-04be58a477d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eda05ddcb3154f39fd8ce88fdd44f531&auto=format&fit=crop&w=500&q=60);">
+                                                <div class="overlay">
+                                                    <div class="overlay-content">
+                                                        <a href="#!">View Project</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card-content">
+                                                <a href="#!">
+                                                    <h2>Title</h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                            </div>
+                                
+                            <div class="carousel-item">
+                                <div class="card hover">
+                                    <div class="card-img" style="background-image:url(https://images.unsplash.com/photo-1493847242172-d46053a1f671?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f91dd5d50f16ba80af53a62d4caf2ce&auto=format&fit=crop&w=500&q=60);">
+                                        <div class="overlay">
+                                            <div class="overlay-content">
+                                                <a class="hover" href="#!">View Project</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-content">
+                                        <a href="#!">
+                                            <h2>Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url(https://images.unsplash.com/photo-1491374812364-00028bbe7d2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a22e4862c36c552e726815949fbcb41a&auto=format&fit=crop&w=500&q=60);">
+                                        <div class="overlay">
+                                            <div class="overlay-content">
+                                                <a href="#!">View Project</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-content">
+                                        <a href="#!">
+                                            <h2>Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-img" style="background-image:url(https://images.unsplash.com/photo-1519176336903-04be58a477d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eda05ddcb3154f39fd8ce88fdd44f531&auto=format&fit=crop&w=500&q=60);">
+                                        <div class="overlay">
+                                            <div class="overlay-content">
+                                                <a href="#!">View Project</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-content">
+                                        <a href="#!">
+                                            <h2>Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <a class="carousel-control-prev custom-color" href="#cardslider" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next custom-color" href="#cardslider" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>    
+        </section>
+        
+
+        <section class="bg-cover2 pb-5 news-blog">
+            <div class="container py-5">
+                <h1 class="mb-5 text-center text-white">Around the Globe</h1>
+                <div class="blog-slider">
+                    <div class="blog-slider__wrp swiper-wrapper">
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt="">
+                          </div>
+                          <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                          </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg" alt="">
+                          </div>
+                          <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                          </div>
+                        </div>
+                        
+                        <div class="blog-slider__item swiper-slide">
+                          <div class="blog-slider__img">
+                            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+                          </div>
+                          <div class="blog-slider__content">
+                            <span class="blog-slider__code">26 December 2019</span>
+                            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                            <a href="#" class="blog-slider__button">READ MORE</a>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="blog-slider__pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 know-more" style="background: url('img/explore-more2.jpg') center; ">
+            
+            <div class="container-fluid">
+                <h1 class="text-center text-white my-3">Explore More!</h1>
+                <div class="topics mt-5 mb-4">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <a class="img">
+                                <div class="img__overlay">
+                                    <div class="img">
+                                      <div class="img__overlay img__overlay--green"><span>
+                                        <h3>What is Climatic Changes?</h3>
+                                        <button class="btn btn-primary btn-custom" id="climatic-changes">Read Here</button>
+                                        </span>
+                                      </div>
+                                      <img src="https://images.unsplash.com/44/MIbCzcvxQdahamZSNQ26_12082014-IMG_3526.jpg?dpr=1&amp;auto=format&amp;fit=crop&amp;w=540&amp;h=360&amp;q=80&amp;cs=tinysrgb&amp;crop="/>
+                                    </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1457140072488-87e5ffde2d77?dpr=1&amp;auto=format&amp;fit=crop&amp;w=540&amp;h=360&amp;q=80&amp;cs=tinysrgb&amp;crop="/>
+                            </a>
+                        </div>
+                        
+                        <div class="col-4">
+                            <a class="img">
+                                <div class="img__overlay">
+                                    <div class="img">
+                                      <div class="img__overlay img__overlay--green"><span>
+                                        <h3>What is Global Warming?</h3>
+                                        <button class="btn btn-primary" id="global-warming">Read Here</button>
+                                        </span>
+                                      </div>
+                                      <img src="https://images.unsplash.com/44/MIbCzcvxQdahamZSNQ26_12082014-IMG_3526.jpg?dpr=1&amp;auto=format&amp;fit=crop&amp;w=540&amp;h=360&amp;q=80&amp;cs=tinysrgb&amp;crop="/>
+                                    </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1457140072488-87e5ffde2d77?dpr=1&amp;auto=format&amp;fit=crop&amp;w=540&amp;h=360&amp;q=80&amp;cs=tinysrgb&amp;crop="/>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a class="img">
+                                <div class="img__overlay">
+                                    <div class="img">
+                                      <div class="img__overlay img__overlay--green"><span>
+                                        <h3>What is Global Warnings?</h3>
+                                        <button class="btn btn-primary" id="global-warning">Read Here</button>
+                                        </span>
+                                      </div>
+                                      <img src="https://images.unsplash.com/44/MIbCzcvxQdahamZSNQ26_12082014-IMG_3526.jpg?dpr=1&amp;auto=format&amp;fit=crop&amp;w=540&amp;h=360&amp;q=80&amp;cs=tinysrgb&amp;crop="/>
+                                    </div>
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1457140072488-87e5ffde2d77?dpr=1&amp;auto=format&amp;fit=crop&amp;w=540&amp;h=360&amp;q=80&amp;cs=tinysrgb&amp;crop="/>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <div id="climatic-changesmodal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title"><img class="mx-3" src="img/climate-change.png" class="img-fluid" height="40px" width="40px"> Climatic Changes</h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    &times;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card">
+                                  <div class="card-img-body">
+                                  <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                                  </div>
+                                  <div class="card-body">
+                                    <h4 class="card-title">Priyank Hajela</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little
+                                      bit longer.</p>
+                                    <a href="#" class="btn btn-outline-primary">Primary</a>
+                                  </div>
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div id="global-warmingmodal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg" role="content">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><img class="mx-3" src="img/global-warming.png" class="img-fluid" width="15%"> Global Warming</h4>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        &times;
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card">
+                          <div class="card-img-body">
+                          <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                          </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Priyank Hajela</h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little
+                              bit longer.</p>
+                            <a href="#" class="btn btn-outline-primary">Primary</a>
+                          </div>
+                        </div>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div id="global-warningmodal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg" role="content">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title"><img class="mx-3" src="img/global-warning2.png" class="img-fluid" width="15%">Global Warning </h4>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        &times;
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card">
+                                      <div class="card-img-body">
+                                        <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                                      </div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">Priyank Hajela</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little
+                                          bit longer.</p>
+                                        <a href="#" class="btn btn-outline-primary">Resource</a>
+                                      </div>
+                                    </div>
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+
+        <!-- global leader review on topics -->
+        <section class="bg-cover2 testimonials">
+            <div class="container py-5">
+                <h1 class="text-center text-white my-3">Thoughts</h1>
+                <div class="row mt-5 mb-4">  
+                    <div class="col-md-4">
+                        <div class="card profile-card">
+                            <div class="background-block">
+                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background"/>
+                            </div>
+                            <div class="profile-thumb-block">
+                                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
+                            </div>
+                            <div class="card-content">
+                            <h2>Justin Mccoy<small>Designer</small></h3>
+                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card profile-card">
+                            <div class="background-block">
+                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background"/>
+                            </div>
+                            <div class="profile-thumb-block">
+                                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
+                            </div>
+                            <div class="card-content">
+                            <h2>Justin Mccoy<small>Designer</small></h3>
+                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!--Profile Card 3-->
+                    <div class="col-md-4">
+                        <div class="card profile-card">
+                            <div class="background-block">
+                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background"/>
+                            </div>
+                            <div class="profile-thumb-block">
+                                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
+                            </div>
+                            <div class="card-content">
+                            <h2>Justin Mccoy<small>Designer</small></h3>
+                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                            </div>
+                        </div>
+                        
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- footer -->
+         <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-2 offset-md-1">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-2 offset-md-1">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">&copy; 2020 Mother-Nature, Jai Kumar Kaushil</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 align-self-center">
+                    <div class="text-center pt-sm-2">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+        
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+        <!-- NProgress -->
+        <script src="node_modules/nprogress/nprogress.js"></script>
+
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </body>
+</html>
+        
