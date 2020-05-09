@@ -67,7 +67,7 @@
     "fontawesome": "^4.7.0",
     "gauge.js": "^0.2.1",
     "icheck": "^1.0.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "moment": "^2.25.3",
     "popper.js": "^1.12.9",
     "skycons": "^1.0.0"
