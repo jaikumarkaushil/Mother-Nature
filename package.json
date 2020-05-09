@@ -58,7 +58,7 @@
     "time-grunt": "^2.0.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "bootstrap-social": "^5.1.1",
     "chart.js": "^2.9.3",
     "date.js": "^0.3.3",
